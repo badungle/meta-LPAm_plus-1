@@ -1,5 +1,5 @@
 /* 
-   Meta-LPAm+ community detection algorithm.
+   meta-LPAm+ community detection algorithm.
    Copyright (C) 2016  Ba-Dung Le <dungleba@gmail.com>   
    
    This program is free software; you can redistribute it and/or modify
@@ -20,7 +20,7 @@
 
 #define EPSILON 1.e-10
 
-// Meta-LPAm+ reuses some of the data structures and functions that have been implemented for the multi-level modularity optimization algorithm in igraph        
+// meta-LPAm+ reuses some of the data structures and functions that have been implemented for the multi-level modularity optimization algorithm in igraph        
 
 /* Structure storing a community */
 typedef struct {
@@ -277,7 +277,7 @@ int LPAm(const igraph_t *graph, igraph_vector_t *membership, igraph_i_multilevel
   
   q = igraph_i_multilevel_community_modularity(communities);
   
-  do { /* Pass begin */
+  do {
 
       pass_q = q;
       changed = 0;
@@ -309,9 +309,6 @@ int LPAm(const igraph_t *graph, igraph_vector_t *membership, igraph_i_multilevel
         communities->item[old_id].weight_all -= weight_all;
         communities->item[old_id].weight_inside -= 2*weight_inside + weight_loop;
 
-         //debug("Remove %ld all: %lf Inside: %lf\n", i, -weight_all, -2*weight_inside + weight_loop); 
-
-        /* Find new community to join with the best modification gain */
         max_q_gain = 0;
         max_weight = weight_inside;
         n = igraph_vector_size(&links_community);
@@ -326,7 +323,6 @@ int LPAm(const igraph_t *graph, igraph_vector_t *membership, igraph_i_multilevel
                                                           (igraph_integer_t) i,
                                                           weight_all, w);
           
-          /* debug("Link %ld -> %ld weight: %lf gain: %lf\n", i, c, (double) w, (double) q_gain); */
           if (q_gain > max_q_gain) {
             new_id = c;
             max_q_gain = q_gain;
@@ -334,9 +330,6 @@ int LPAm(const igraph_t *graph, igraph_vector_t *membership, igraph_i_multilevel
           }
         }
 
-        /* debug("Added vertex %ld to community %ld (gain %lf).\n", i, new_id, (double) max_q_gain); */
-
-        /* Add vertex to "new" community and update it */
         igraph_vector_set(membership, i, new_id);
         if (communities->item[new_id].size == 0) {communities->communities_no++;}
         communities->item[new_id].size++;
@@ -362,7 +355,7 @@ int LPAm(const igraph_t *graph, igraph_vector_t *membership, igraph_i_multilevel
   return 0;
 }
 
-igraph_bool_t MetaLPAm_jump(const igraph_t *graph, igraph_i_multilevel_community_list *communities, igraph_real_t q_max, igraph_real_t delta, igraph_vector_t *node_order){
+igraph_bool_t metaLPAm_jump(const igraph_t *graph, igraph_i_multilevel_community_list *communities, igraph_real_t q_max, igraph_real_t delta, igraph_vector_t *node_order){
     long int i, j;
     long int vcount = igraph_vcount(graph);
     igraph_bool_t changed = 0;
@@ -447,11 +440,8 @@ igraph_bool_t MetaLPAm_jump(const igraph_t *graph, igraph_i_multilevel_community
             communities->item[new_id].weight_inside += 2*weight + weight_loop;            
             
             q = q + q_gain;            
-            changed++;           
-
-            
-        }     
-        
+            changed++;             
+        }   
       }
     
   igraph_vector_destroy(&links_community);
@@ -469,7 +459,6 @@ igraph_bool_t MetaLPAm_jump(const igraph_t *graph, igraph_i_multilevel_community
 
 int metaLPAm(const igraph_t *graph, igraph_i_multilevel_community_list *communities, igraph_real_t delta, int max_loop, igraph_vector_t *node_order){
   long int vcount = igraph_vcount(graph);
-  int pass = 0;
   igraph_bool_t changed=0;
   
   igraph_vector_t membership_max;
@@ -483,11 +472,9 @@ int metaLPAm(const igraph_t *graph, igraph_i_multilevel_community_list *communit
   igraph_real_t q_max = igraph_i_multilevel_community_modularity(communities);
   int no_increase = 0;
   
-  changed = MetaLPAm_jump(graph, communities, q_max, delta, node_order);
-  pass++;
-  
+  changed = metaLPAm_jump(graph, communities, q_max, delta, node_order);  
   while((changed) && (no_increase < max_loop)){
-    pass = pass + LPAm(graph, communities->membership, communities, node_order);  
+    LPAm(graph, communities->membership, communities, node_order);  
     no_increase++; 
     igraph_real_t q = igraph_i_multilevel_community_modularity(communities);
     if (q> q_max) {
@@ -495,14 +482,14 @@ int metaLPAm(const igraph_t *graph, igraph_i_multilevel_community_list *communit
         communities_backup(&communities_max, communities, vcount);
         no_increase = 0;
     }         
-    changed = MetaLPAm_jump(graph, communities, q_max, delta, node_order);
-    pass++;    
+    changed = metaLPAm_jump(graph, communities, q_max, delta, node_order); 
   }   
   
   communities_backup(communities, &communities_max, vcount);
         
-  igraph_vector_destroy(&membership_max);
   igraph_free(communities_max.item);
+  igraph_vector_destroy(&membership_max);  
+  IGRAPH_FINALLY_CLEAN(1);
   
   return 0;
 }
@@ -590,7 +577,7 @@ igraph_bool_t merging_communities(const igraph_t *graph, const igraph_vector_t *
     return n_level;    
 }
 
-int MetaLPAm_plus(const igraph_t *graph, const igraph_vector_t *weights, igraph_vector_t *membership, igraph_real_t *modularity) {    
+int metaLPAm_plus(const igraph_t *graph, const igraph_vector_t *weights, igraph_vector_t *membership, igraph_real_t *modularity) {    
 
     // data structure for the RRT inspired meta-heuristic
     const igraph_real_t delta = 0.01;
@@ -675,7 +662,7 @@ int main() {
                  31, 32, 31, 33, 32, 33,
                  -1);    
     
-    MetaLPAm_plus(&g, 0, &membership, &modularity);
+    metaLPAm_plus(&g, 0, &membership, &modularity);
     
     printf("Modularity:  %.4f\n", modularity);
     printf("Membership: ");    
