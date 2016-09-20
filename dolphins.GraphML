@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+         http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+<!-- Created by igraph -->
+  <key id="Description" for="graph" attr.name="Description" attr.type="string"/>
+  <key id="name" for="graph" attr.name="name" attr.type="string"/>
+  <key id="Author" for="graph" attr.name="Author" attr.type="string"/>
+  <key id="Citation" for="graph" attr.name="Citation" attr.type="string"/>
+  <key id="URL" for="graph" attr.name="URL" attr.type="string"/>
+  <key id="name" for="node" attr.name="name" attr.type="string"/>
+  <graph id="G" edgedefault="undirected">
+    <data key="Description">The file dolphins.gml contains an undirected social network of frequent
+associations between 62 dolphins in a community living off Doubtful Sound,
+New Zealand, as compiled by Lusseau et al. (2003).  Please cite
+
+  D. Lusseau, K. Schneider, O. J. Boisseau, P. Haase, E. Slooten, and
+  S. M. Dawson, The bottlenose dolphin community of Doubtful Sound features
+  a large proportion of long-lasting associations, Behavioral Ecology and
+  Sociobiology 54, 396-405 (2003).
+
+Additional information on the network can be found in
+
+  D. Lusseau, The emergent properties of a dolphin social network,
+  Proc. R. Soc. London B (suppl.) 270, S186-S188 (2003).
+
+  D. Lusseau, Evidence for social role in a dolphin social network,
+  Preprint q-bio/0607048 (http://arxiv.org/abs/q-bio.PE/0607048)
+</data>
+    <data key="name">Dophin social network</data>
+    <data key="Author">D. Lusseau et al.</data>
+    <data key="Citation">D. Lusseau, K. Schneider, O. J. Boisseau, P. Haase, E. Slooten, and S. M. Dawson, The bottlenose dolphin community of Doubtful Sound features a large proportion of long-lasting associations, Behavioral Ecology and Sociobiology 54, 396-405 (2003).</data>
+    <data key="URL">http://www-personal.umich.edu/~mejn/netdata/</data>
+    <node id="n0">
+      <data key="name">Beak</data>
+    </node>
+    <node id="n1">
+      <data key="name">Beescratch</data>
+    </node>
+    <node id="n2">
+      <data key="name">Bumper</data>
+    </node>
+    <node id="n3">
+      <data key="name">CCL</data>
+    </node>
+    <node id="n4">
+      <data key="name">Cross</data>
+    </node>
+    <node id="n5">
+      <data key="name">DN16</data>
+    </node>
+    <node id="n6">
+      <data key="name">DN21</data>
+    </node>
+    <node id="n7">
+      <data key="name">DN63</data>
+    </node>
+    <node id="n8">
+      <data key="name">Double</data>
+    </node>
+    <node id="n9">
+      <data key="name">Feather</data>
+    </node>
+    <node id="n10">
+      <data key="name">Fish</data>
+    </node>
+    <node id="n11">
+      <data key="name">Five</data>
+    </node>
+    <node id="n12">
+      <data key="name">Fork</data>
+    </node>
+    <node id="n13">
+      <data key="name">Gallatin</data>
+    </node>
+    <node id="n14">
+      <data key="name">Grin</data>
+    </node>
+    <node id="n15">
+      <data key="name">Haecksel</data>
+    </node>
+    <node id="n16">
+      <data key="name">Hook</data>
+    </node>
+    <node id="n17">
+      <data key="name">Jet</data>
+    </node>
+    <node id="n18">
+      <data key="name">Jonah</data>
+    </node>
+    <node id="n19">
+      <data key="name">Knit</data>
+    </node>
+    <node id="n20">
+      <data key="name">Kringel</data>
+    </node>
+    <node id="n21">
+      <data key="name">MN105</data>
+    </node>
+    <node id="n22">
+      <data key="name">MN23</data>
+    </node>
+    <node id="n23">
+      <data key="name">MN60</data>
+    </node>
+    <node id="n24">
+      <data key="name">MN83</data>
+    </node>
+    <node id="n25">
+      <data key="name">Mus</data>
+    </node>
+    <node id="n26">
+      <data key="name">Notch</data>
+    </node>
+    <node id="n27">
+      <data key="name">Number1</data>
+    </node>
+    <node id="n28">
+      <data key="name">Oscar</data>
+    </node>
+    <node id="n29">
+      <data key="name">Patchback</data>
+    </node>
+    <node id="n30">
+      <data key="name">PL</data>
+    </node>
+    <node id="n31">
+      <data key="name">Quasi</data>
+    </node>
+    <node id="n32">
+      <data key="name">Ripplefluke</data>
+    </node>
+    <node id="n33">
+      <data key="name">Scabs</data>
+    </node>
+    <node id="n34">
+      <data key="name">Shmuddel</data>
+    </node>
+    <node id="n35">
+      <data key="name">SMN5</data>
+    </node>
+    <node id="n36">
+      <data key="name">SN100</data>
+    </node>
+    <node id="n37">
+      <data key="name">SN4</data>
+    </node>
+    <node id="n38">
+      <data key="name">SN63</data>
+    </node>
+    <node id="n39">
+      <data key="name">SN89</data>
+    </node>
+    <node id="n40">
+      <data key="name">SN9</data>
+    </node>
+    <node id="n41">
+      <data key="name">SN90</data>
+    </node>
+    <node id="n42">
+      <data key="name">SN96</data>
+    </node>
+    <node id="n43">
+      <data key="name">Stripes</data>
+    </node>
+    <node id="n44">
+      <data key="name">Thumper</data>
+    </node>
+    <node id="n45">
+      <data key="name">Topless</data>
+    </node>
+    <node id="n46">
+      <data key="name">TR120</data>
+    </node>
+    <node id="n47">
+      <data key="name">TR77</data>
+    </node>
+    <node id="n48">
+      <data key="name">TR82</data>
+    </node>
+    <node id="n49">
+      <data key="name">TR88</data>
+    </node>
+    <node id="n50">
+      <data key="name">TR99</data>
+    </node>
+    <node id="n51">
+      <data key="name">Trigger</data>
+    </node>
+    <node id="n52">
+      <data key="name">TSN103</data>
+    </node>
+    <node id="n53">
+      <data key="name">TSN83</data>
+    </node>
+    <node id="n54">
+      <data key="name">Upbang</data>
+    </node>
+    <node id="n55">
+      <data key="name">Vau</data>
+    </node>
+    <node id="n56">
+      <data key="name">Wave</data>
+    </node>
+    <node id="n57">
+      <data key="name">Web</data>
+    </node>
+    <node id="n58">
+      <data key="name">Whitetip</data>
+    </node>
+    <node id="n59">
+      <data key="name">Zap</data>
+    </node>
+    <node id="n60">
+      <data key="name">Zig</data>
+    </node>
+    <node id="n61">
+      <data key="name">Zipfel</data>
+    </node>
+    <edge source="n3" target="n8">
+    </edge>
+    <edge source="n5" target="n9">
+    </edge>
+    <edge source="n6" target="n9">
+    </edge>
+    <edge source="n0" target="n10">
+    </edge>
+    <edge source="n2" target="n10">
+    </edge>
+    <edge source="n5" target="n13">
+    </edge>
+    <edge source="n6" target="n13">
+    </edge>
+    <edge source="n9" target="n13">
+    </edge>
+    <edge source="n0" target="n14">
+    </edge>
+    <edge source="n3" target="n14">
+    </edge>
+    <edge source="n0" target="n15">
+    </edge>
+    <edge source="n14" target="n16">
+    </edge>
+    <edge source="n1" target="n17">
+    </edge>
+    <edge source="n6" target="n17">
+    </edge>
+    <edge source="n9" target="n17">
+    </edge>
+    <edge source="n13" target="n17">
+    </edge>
+    <edge source="n15" target="n18">
+    </edge>
+    <edge source="n1" target="n19">
+    </edge>
+    <edge source="n7" target="n19">
+    </edge>
+    <edge source="n8" target="n20">
+    </edge>
+    <edge source="n16" target="n20">
+    </edge>
+    <edge source="n18" target="n20">
+    </edge>
+    <edge source="n18" target="n21">
+    </edge>
+    <edge source="n17" target="n22">
+    </edge>
+    <edge source="n14" target="n24">
+    </edge>
+    <edge source="n15" target="n24">
+    </edge>
+    <edge source="n18" target="n24">
+    </edge>
+    <edge source="n17" target="n25">
+    </edge>
+    <edge source="n1" target="n26">
+    </edge>
+    <edge source="n25" target="n26">
+    </edge>
+    <edge source="n1" target="n27">
+    </edge>
+    <edge source="n7" target="n27">
+    </edge>
+    <edge source="n17" target="n27">
+    </edge>
+    <edge source="n25" target="n27">
+    </edge>
+    <edge source="n26" target="n27">
+    </edge>
+    <edge source="n1" target="n28">
+    </edge>
+    <edge source="n8" target="n28">
+    </edge>
+    <edge source="n20" target="n28">
+    </edge>
+    <edge source="n10" target="n29">
+    </edge>
+    <edge source="n18" target="n29">
+    </edge>
+    <edge source="n21" target="n29">
+    </edge>
+    <edge source="n24" target="n29">
+    </edge>
+    <edge source="n7" target="n30">
+    </edge>
+    <edge source="n19" target="n30">
+    </edge>
+    <edge source="n28" target="n30">
+    </edge>
+    <edge source="n17" target="n31">
+    </edge>
+    <edge source="n9" target="n32">
+    </edge>
+    <edge source="n13" target="n32">
+    </edge>
+    <edge source="n12" target="n33">
+    </edge>
+    <edge source="n14" target="n33">
+    </edge>
+    <edge source="n16" target="n33">
+    </edge>
+    <edge source="n21" target="n33">
+    </edge>
+    <edge source="n14" target="n34">
+    </edge>
+    <edge source="n33" target="n34">
+    </edge>
+    <edge source="n29" target="n35">
+    </edge>
+    <edge source="n1" target="n36">
+    </edge>
+    <edge source="n20" target="n36">
+    </edge>
+    <edge source="n23" target="n36">
+    </edge>
+    <edge source="n8" target="n37">
+    </edge>
+    <edge source="n14" target="n37">
+    </edge>
+    <edge source="n16" target="n37">
+    </edge>
+    <edge source="n21" target="n37">
+    </edge>
+    <edge source="n33" target="n37">
+    </edge>
+    <edge source="n34" target="n37">
+    </edge>
+    <edge source="n36" target="n37">
+    </edge>
+    <edge source="n14" target="n38">
+    </edge>
+    <edge source="n16" target="n38">
+    </edge>
+    <edge source="n20" target="n38">
+    </edge>
+    <edge source="n33" target="n38">
+    </edge>
+    <edge source="n36" target="n39">
+    </edge>
+    <edge source="n0" target="n40">
+    </edge>
+    <edge source="n7" target="n40">
+    </edge>
+    <edge source="n14" target="n40">
+    </edge>
+    <edge source="n15" target="n40">
+    </edge>
+    <edge source="n33" target="n40">
+    </edge>
+    <edge source="n36" target="n40">
+    </edge>
+    <edge source="n37" target="n40">
+    </edge>
+    <edge source="n1" target="n41">
+    </edge>
+    <edge source="n9" target="n41">
+    </edge>
+    <edge source="n13" target="n41">
+    </edge>
+    <edge source="n0" target="n42">
+    </edge>
+    <edge source="n2" target="n42">
+    </edge>
+    <edge source="n10" target="n42">
+    </edge>
+    <edge source="n30" target="n42">
+    </edge>
+    <edge source="n14" target="n43">
+    </edge>
+    <edge source="n29" target="n43">
+    </edge>
+    <edge source="n33" target="n43">
+    </edge>
+    <edge source="n37" target="n43">
+    </edge>
+    <edge source="n38" target="n43">
+    </edge>
+    <edge source="n2" target="n44">
+    </edge>
+    <edge source="n20" target="n44">
+    </edge>
+    <edge source="n34" target="n44">
+    </edge>
+    <edge source="n38" target="n44">
+    </edge>
+    <edge source="n8" target="n45">
+    </edge>
+    <edge source="n15" target="n45">
+    </edge>
+    <edge source="n18" target="n45">
+    </edge>
+    <edge source="n21" target="n45">
+    </edge>
+    <edge source="n23" target="n45">
+    </edge>
+    <edge source="n24" target="n45">
+    </edge>
+    <edge source="n29" target="n45">
+    </edge>
+    <edge source="n37" target="n45">
+    </edge>
+    <edge source="n43" target="n46">
+    </edge>
+    <edge source="n0" target="n47">
+    </edge>
+    <edge source="n10" target="n47">
+    </edge>
+    <edge source="n20" target="n47">
+    </edge>
+    <edge source="n28" target="n47">
+    </edge>
+    <edge source="n30" target="n47">
+    </edge>
+    <edge source="n42" target="n47">
+    </edge>
+    <edge source="n34" target="n49">
+    </edge>
+    <edge source="n46" target="n49">
+    </edge>
+    <edge source="n14" target="n50">
+    </edge>
+    <edge source="n16" target="n50">
+    </edge>
+    <edge source="n20" target="n50">
+    </edge>
+    <edge source="n33" target="n50">
+    </edge>
+    <edge source="n42" target="n50">
+    </edge>
+    <edge source="n45" target="n50">
+    </edge>
+    <edge source="n4" target="n51">
+    </edge>
+    <edge source="n11" target="n51">
+    </edge>
+    <edge source="n18" target="n51">
+    </edge>
+    <edge source="n21" target="n51">
+    </edge>
+    <edge source="n23" target="n51">
+    </edge>
+    <edge source="n24" target="n51">
+    </edge>
+    <edge source="n29" target="n51">
+    </edge>
+    <edge source="n45" target="n51">
+    </edge>
+    <edge source="n50" target="n51">
+    </edge>
+    <edge source="n14" target="n52">
+    </edge>
+    <edge source="n29" target="n52">
+    </edge>
+    <edge source="n38" target="n52">
+    </edge>
+    <edge source="n40" target="n52">
+    </edge>
+    <edge source="n43" target="n53">
+    </edge>
+    <edge source="n1" target="n54">
+    </edge>
+    <edge source="n6" target="n54">
+    </edge>
+    <edge source="n7" target="n54">
+    </edge>
+    <edge source="n13" target="n54">
+    </edge>
+    <edge source="n19" target="n54">
+    </edge>
+    <edge source="n41" target="n54">
+    </edge>
+    <edge source="n15" target="n55">
+    </edge>
+    <edge source="n51" target="n55">
+    </edge>
+    <edge source="n5" target="n56">
+    </edge>
+    <edge source="n6" target="n56">
+    </edge>
+    <edge source="n5" target="n57">
+    </edge>
+    <edge source="n6" target="n57">
+    </edge>
+    <edge source="n9" target="n57">
+    </edge>
+    <edge source="n13" target="n57">
+    </edge>
+    <edge source="n17" target="n57">
+    </edge>
+    <edge source="n39" target="n57">
+    </edge>
+    <edge source="n41" target="n57">
+    </edge>
+    <edge source="n48" target="n57">
+    </edge>
+    <edge source="n54" target="n57">
+    </edge>
+    <edge source="n38" target="n58">
+    </edge>
+    <edge source="n3" target="n59">
+    </edge>
+    <edge source="n8" target="n59">
+    </edge>
+    <edge source="n15" target="n59">
+    </edge>
+    <edge source="n36" target="n59">
+    </edge>
+    <edge source="n45" target="n59">
+    </edge>
+    <edge source="n32" target="n60">
+    </edge>
+    <edge source="n2" target="n61">
+    </edge>
+    <edge source="n37" target="n61">
+    </edge>
+    <edge source="n53" target="n61">
+    </edge>
+  </graph>
+</graphml>
